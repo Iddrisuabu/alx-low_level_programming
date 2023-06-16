@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - A program to print puts function
  *
  * Return: 0 (succes)
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
