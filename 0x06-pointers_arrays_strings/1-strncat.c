@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - to append a string.
+ * _strncat - to append a string.
  * @src: source of the string to copy.
  * @dest: destination of string copied.
  * @n: maximum number of character to be appended.
@@ -28,6 +28,6 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 
-	dest[l] = '\0';
+	dest[l + n + 1] = '\0';
 	return (dest);
 }
