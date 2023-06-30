@@ -1,25 +1,31 @@
 #include "main.h"
 
 /**
- * cap_string - make all words in a string upper case.
- * @str: string to be used
- * Return: characters.
- */
+  * cap_string - captalize string.
+  * @s: string to be used
+  * Return: char
+  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int cap = 0;
+	int i = 0, a;
+	int c = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	while (str[cap])
+	while (s[i])
 	{
-		while (!(str[cap] >= 97 && str[cap] <= 122))
-			cap++;
+		a = 0;
 
-		if (str[cap - 1] == 32 || str[cap - 1] == '\t' || str[cap - 1] == '\n' || str[cap - 1] == ',' || str[cap - 1] == ';' || str[cap - 1] == '.' || str[cap - 1] == '!' || str[cap - 1] == '?' || str[cap - 1] == '"' || str[cap - 1] == '(' || str[cap - 1] == ')' || str[cap - 1] == '{' || str[cap - 1] == '}' || cap == 0)
+		while (a < c)
+		{
+			if ((i == 0 || s[i - 1] == spc[a]) && (s[i] >= 97 && s[i] <= 122))
+				s[i] -= 32;
 
-		str[cap] -= 32;
+			a++;
+		}
 
-		cap++;
+		i++;
 	}
-	return (str);
+
+	return (s);
 }
