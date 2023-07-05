@@ -8,7 +8,7 @@
 
 void _print_rev_recursion(char *s)
 {
-	//base case.
+
 	if (*s == '\0')
 	{
 		return;
