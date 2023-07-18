@@ -5,9 +5,10 @@
  * _strcpy - to copy a sting.
  * @src: source string.
  * @dest: destination String.
- * Return: character.
+ * Return: string.
  */
-char _strcpy(char *dest, char *src)
+
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0, j = 0;
 
@@ -20,7 +21,7 @@ char _strcpy(char *dest, char *src)
 		j++;
 	}
 	dest[j] = '\0';
-	return (dest[j]);
+	return (dest);
 }
 
 /**
