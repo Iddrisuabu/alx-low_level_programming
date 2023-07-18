@@ -51,7 +51,7 @@ int _strlen(char *s)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *joy;
-	int n = 0, o = 0;
+	int n, o;
 
 	o = _strlen(name);
 	n = _strlen(owner);
@@ -78,8 +78,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	_strcpy(joy->name, name);
-	_strcpy(joy->owner, owner);
+	joy->name = _strcpy(joy->name, name);
+	joy->owner = _strcpy(joy->owner, owner);
 	joy->age = age;
 
 	return (joy);
