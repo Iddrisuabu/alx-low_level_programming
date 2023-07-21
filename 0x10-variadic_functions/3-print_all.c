@@ -12,8 +12,8 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str;
-	va_list dtp;
 	char *sp = "";
+	va_list dtp;
 
 	va_start(dtp, format);
 
@@ -34,7 +34,7 @@ void print_all(const char * const format, ...)
 					break;
 				case 's':
 					str = va_arg(dtp, char *);
-					if (!str)
+					if (str == NULL)
 						printf("(nil");
 					printf("%s%s", sp, str);
 					break;
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 					continue;
 			}
 
-		sp = ",";
+		sp = ", ";
 		i++;
 
 		}
