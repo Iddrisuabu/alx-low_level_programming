@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * get_op_func - to selects the correct function to perform the operation.
+ * get_op_func - to selec function to perform the operation.
  * @s: operator passed as argument
  * Return: integer.
  */
@@ -26,4 +26,3 @@ int (*get_op_func(char *s))(int, int)
 	return (ops[i].f);
 
 }
-
