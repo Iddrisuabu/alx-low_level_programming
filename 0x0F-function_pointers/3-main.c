@@ -6,7 +6,6 @@
  * main - prints the result of operations.
  * @argc: counts arguments passed.
  * @argv: arguments passed.
- *
  * Return: Always 0.
  */
 
