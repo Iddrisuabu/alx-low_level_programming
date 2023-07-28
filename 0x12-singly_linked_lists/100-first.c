@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+void _print_str(void) __attribute__((constructor));
 /**
  * _print_str - function that prints a string.
  * Return: 0.
