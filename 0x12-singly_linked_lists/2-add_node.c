@@ -21,6 +21,7 @@ int _strlen(const char *s)
 /**
  * add_node - ton add a new node at the beginning.
  * @head: head pointer to node.
+ * @str: string to be added.
  * Return: new node.
  */
 list_t *add_node(list_t **head, const char *str)
